@@ -11,3 +11,7 @@ The previous committed key was removed from current source. Anyone who controlle
 ## Scope and limitations
 
 This is a completed small UI/API exercise, not a forecasting service. It depends on API access/network availability, uses forecast intervals rather than guaranteeing rain/no rain, and reports request failures. The weather location is fixed to Reus; the clock uses the browser's local timezone.
+
+## Validation
+
+`node --test test/*.test.cjs` passes two mock-only checks for weather rendering, cleared key input, and provider-failure recovery. No live API credential or weather request is tested.
