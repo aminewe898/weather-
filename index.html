@@ -10,13 +10,19 @@
   <div class="weather-card">
     <h1>🌍 Weather in Reus</h1>
 
+    <form id="weather-form">
+      <label for="api-key">Your OpenWeather API key</label>
+      <input id="api-key" type="password" required autocomplete="off">
+      <button id="load-weather" type="submit">Load weather</button>
+      <p>The key is sent directly to OpenWeather for this request. Use a dedicated demo key; it is not saved by this page.</p>
+    </form>
     <p id="time">--:--</p>
 
     <p class="label">Current temperature</p>
     <p id="temp">-- °C</p>
 
     <p class="label">Tomorrow</p>
-    <p id="rain">Checking forecast…</p>
+    <p id="rain">Enter an API key to load</p>
 
     <footer>
       Fet per <strong>Amine Aslimani</strong> 💻✨
